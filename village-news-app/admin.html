@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+
+<input id="title" placeholder="Title"><br>
+<textarea id="msg" placeholder="Message"></textarea><br>
+<button onclick="addNews()">Post News</button>
+
+<div id="newsList"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
