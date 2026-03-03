@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 3 Task 1 - Image Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+<div class="gallery">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm0uJIhZSn3yIbFCmNiyYcBeJt1G89FMcgQ&s/id/1014/300/200" onclick="openImg(this)">
+  <img src="https://picsum.photos/id/1015/300/200" onclick="openImg(this)">
+  <img src="https://picsum.photos/id/1016/300/200" onclick="openImg(this)">
+  <img src="https://picsum.photos/id/1018/300/200" onclick="openImg(this)">
+</div>
+
+<div class="preview">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm0uJIhZSn3yIbFCmNiyYcBeJt1G89FMcgQ&s/id/1014/300/200" onclick="openImg(this)">
+</div>
+
+<h2>Automatic Slideshow</h2>
+
+<div class="slideshow">
+  <div class="slides"></div>
+</div>
+
+<script>
+function openImg(img) {
+  document.getElementById("bigImg").src = img.src.replace("300/200", "600/400");
+}
+</script>
+
+</body>
+</html>

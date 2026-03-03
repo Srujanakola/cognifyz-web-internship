@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.gallery img {
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+.preview img {
+  margin-top: 20px;
+  width: 600px;
+  border: 4px solid #000;
+}
+
+.slideshow {
+  width: 600px;
+  height: 400px;
+  margin: 40px auto;
+  background-size: cover;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  10%   { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkm0uJIhZSn3yIbFCmNiyYcBeJt1G89FMcgQ&s"); }
+  33%  { background-image: url("https://picsum.photos/id/1016/600/400"); }
+  66%  { background-image: url("https://picsum.photos/id/1018/600/400"); }
+  100% { background-image: url("https://picsum.photos/id/1015/600/400"); }
+}
